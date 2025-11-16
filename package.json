@@ -1,0 +1,9 @@
+{
+  "name": "tutor-directory",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "author": "ravipatelctf",
+  "license": "ISC",
+  "packageManager": "pnpm@10.20.0"
+}
