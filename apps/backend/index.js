@@ -7,7 +7,7 @@ app.use(express.json());
 
 import cors from "cors";
 const corsOptions = {
-  origin: ["http://localhost:5173", "https://tutor-directory.vercel.app"],
+  origin: ["http://localhost:5173", "https://tutordirectory.vercel.app"],
   credentials: true,
   optionSuccessStatus: 200,
 };
