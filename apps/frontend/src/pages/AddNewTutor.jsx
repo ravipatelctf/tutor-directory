@@ -4,6 +4,8 @@ import { addNewTutor } from "../api/data";
 import { toast } from "react-toastify";
 import { districtsByStates } from "../dataForForm/districtsByStates";
 import { statesAndUTs } from "../dataForForm/statesAndUTs";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 export default function AddNewTutor() {
   const [name, setName] = useState("");
@@ -52,14 +54,9 @@ export default function AddNewTutor() {
   }
 
   return (
+    <div className="min-h-screen bg-gray-50">
+      <Navbar />
     <main className="max-w-xl mx-auto px-4 pt-4 pb-10">
-      {/* Back Link */}
-      <Link
-        to="/"
-        className="block w-full text-center border border-gray-800 text-gray-800 font-semibold py-2 rounded-lg hover:bg-gray-800 hover:text-white transition"
-      >
-        Find a Home Tutor in your area
-      </Link>
 
       <h1 className="text-center text-3xl font-bold mt-4 mb-6">
         Register as a Tutor
@@ -204,5 +201,7 @@ export default function AddNewTutor() {
         </div>
       </form>
     </main>
+    <Footer />
+    </div>
   );
 }
